@@ -61,3 +61,12 @@ function stringToarray(str) {
 let arr = stringToarray(str);
 
 document.writeln(arr); // ['Каждый', 'охотник', 'желает', 'знать']
+
+
+//Сортировка массива
+
+let strings = ['мир','труд','май','наливай'];
+
+let result = strings.sort(function(a,b) {
+    return a.localeCompare(b)
+});

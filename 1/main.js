@@ -1,19 +1,17 @@
 // Arrays №3
-// Напишите функцию stringToarray(str), которая преобразует строку в массив слов
 
-let str = 'Каждый охотник желает знать';
+function stringWork() {
 
-function stringToarray(x) {
+    let str = document.getElementById('head').innerHTML;
 
-    let locArr = [];
+    
+    //let result = String(str);
+    let result = str.match();
 
-    for (let i = 0; i < x.length; i++) {
-        
-    }
+    document.getElementById('result').innerHTML = result;
+}
 
-};
-
-let arr = stringToarray(str);
-
-console.log(arr); // ['Каждый', 'охотник', 'желает', 'знать']
+window.onload = function () {
+    stringWork();
+}
 
