@@ -15,3 +15,17 @@ window.onload = function () {
 }
 
 console.log(stringWork);
+
+let obj = {
+    one: 'hi',
+    two: 12,
+    'string': true,
+};
+
+function addObj (o, i, v) {       
+    return o[i] = v;
+    }
+    
+    addObj(obj, 'one', 'hellow');
+
+    console.log(obj.one);
