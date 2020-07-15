@@ -25,4 +25,48 @@ return o[i] = v;
 addObj(obj, one, 'hellow');
 
 
-//Каждый объект имеет второй объект, ассоциированный сним – прототип
+//Удаление свойств объекта
+delete obj1.one
+
+
+//Цыклический обход свойств объекта
+for (v in obj) {                          //выполняет тело цикла для каждого свойства объекта,
+    console.log(v + ' - ' +obj[v]);       //присваивая имя свойства пременной цикла, которая пишется перед in
+}
+
+
+//Проверка наличия свойства у объекта
+if ('one' in obj) {
+    console.log(obj.one);
+}
+
+if (obj.hasOwnProperty('one')) {
+    alert(obj.one);
+}
+
+
+//Метод объекта – действие, которое может выполнить объект
+let obj3 = {
+    prop1: 30,
+    prop2: 20,
+    func: function() {
+        console.log(this.prop1 + this.prop2);
+    }
+}
+
+obj3.func();
+
+
+//Методы чтения и записи свойств
+let o = {
+    prop1: 10,
+    prop2 = 20,
+    
+    func: function() {
+        console.log(this.prop1 + this.prop2);
+    },
+
+    get summ() {
+
+    }
+}

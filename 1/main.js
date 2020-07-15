@@ -22,10 +22,13 @@ let obj = {
     'string': true,
 };
 
-function addObj (o, i, v) {       
-    return o[i] = v;
-    }
-    
-    addObj(obj, 'one', 'hellow');
 
-    console.log(obj.one);
+let obj3 = {
+    prop1: 30,
+    prop2: 20,
+    func: function () {
+        console.log(this.prop1 + this.prop2);
+    }
+}
+
+obj3.func();
