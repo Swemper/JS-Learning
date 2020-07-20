@@ -33,16 +33,6 @@ alert(!a)          //false
 alert(!!a)         //true
 
 
-//Вывод данных
-console.log('12');          //служебный вывод
-alert('hellow');            //модальный вывод
-document.getElementById()   //вывод на страницу
-document.querySelector()
-
-document.getElementById('out').innerHTML = 'Hellow';
-document.querySelector('h2.header').innerHTML = 5;
-
-
 
 
 //Методы работы со строковым типом данных 
